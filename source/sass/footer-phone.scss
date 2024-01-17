@@ -1,0 +1,16 @@
+.footer-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-phone__link {
+  color: #2c2d35;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-phone__text {
+  color: #86928b;
+  font-size: 16px;
+}

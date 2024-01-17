@@ -1,0 +1,24 @@
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #c3d1c6;
+  margin: 20px 0;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 30px;
+}

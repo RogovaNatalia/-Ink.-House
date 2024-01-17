@@ -1,0 +1,38 @@
+.main-header {
+
+}
+
+.main-header__container {
+  margin: 0;
+  background-color: #e1ede6;
+}
+
+.main-header__brand {
+  display: flex;
+  background-color: #ffffff;
+  margin: 0 -15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-header__logo {
+  text-align: center;
+}
+
+.main-header__logo-image {
+  margin: 16px 0;
+}
+
+.main-header__nav-toggle {
+  position: relative;
+  padding: 16px 0;
+}
+
+.main-header__nav {
+  display: none;
+}
+
+
+.main-header__cart {
+
+}

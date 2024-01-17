@@ -1,0 +1,12 @@
+@use "../sass/title.scss";
+
+.catalog-top__title {
+  @include title.title();
+  margin-bottom: 20px;
+}
+
+.catalog-top__tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

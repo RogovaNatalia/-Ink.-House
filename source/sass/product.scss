@@ -1,0 +1,47 @@
+@use "../sass/title.scss";
+
+.product {
+  background-color: #e1ede6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.product__author {
+  margin-bottom: 10px;
+  color: #86928b;
+  font-size: 16px;
+}
+
+.product__title {
+  @include title.title();
+  margin-bottom: 10px;
+}
+
+.product__info {
+  font-size: 16px;
+  color: #2c2d35;
+  margin-bottom: 30px;
+}
+
+.product__price {
+  color: #598d66;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product__btn {
+  background-color: #e1ede6;
+  padding: 20px 60px;
+}
+
+.product__image {
+  width: 100%;
+}

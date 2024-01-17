@@ -1,0 +1,19 @@
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav__item {
+  margin-top: 50px;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+
+
+.nav__link {
+  text-decoration: none;
+  color: #2c2d35;
+  font-size: 18px;
+}

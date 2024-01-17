@@ -1,0 +1,59 @@
+@use "../sass/title.scss";
+
+.novices {
+  // background-image: url(../img/novices-bg-mobile.jpg);
+  background: url("../img/novices-bg-mobile.jpg"), lightgray 0 -176px / 100% 170% no-repeat;
+  // position: relative;
+  // overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+
+.novices__title {
+  @include title.title();
+  color: #ffffff;
+  position: relative;
+  line-height: 100%;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+.novices__title::before {
+  content: "";
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+
+.novices__content {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.novices__description {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.novices__btn {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2c2d35;
+  background-color: #eedb6d;
+  padding: 14px 0;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 51px;
+}

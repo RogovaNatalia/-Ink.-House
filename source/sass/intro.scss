@@ -1,0 +1,27 @@
+@use "../sass/title.scss";
+
+.intro {
+  padding: 60px 0;
+}
+
+.intro__title {
+  @include title.title();
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.intro__title span {
+  color: #598d66;
+}
+
+.intro__description {
+  color: #86928b;
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 40px;
+  line-height: 21px;
+}
+
+.intro__link {
+  padding: 14px 29px;
+}

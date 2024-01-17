@@ -1,0 +1,30 @@
+@use "../sass/title.scss";
+
+.footer-menu__column {
+
+}
+
+.footer-menu__title {
+  @include title.title();
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.footer-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu__item{
+
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: #86928b;
+}

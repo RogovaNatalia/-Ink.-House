@@ -1,0 +1,29 @@
+@use "../sass/title.scss";
+
+.about {
+  padding-top: 59px;
+  padding-bottom: 94px;
+  background-color: #f4f6f5;
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.about__title {
+  @include title.title();
+  margin-top: 30px;
+}
+
+.about__description {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.about__team {
+  display: flex;
+  align-items: center;
+}

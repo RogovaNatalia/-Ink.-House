@@ -1,0 +1,43 @@
+.nav-toggle {
+
+}
+
+.nav-toggle__open,
+.nav-toggle__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle__open {
+  display: block;
+}
+
+.nav-toggle--open .nav-toggle__open {
+  display: none;
+}
+
+.nav-toggle__cart {
+  display: block;
+}
+
+.nav-toggle--open .nav-toggle__cart {
+  display: none;
+}
+
+.nav-toggle__close {
+  display: none;
+}
+
+.nav-toggle--open .nav-toggle__close {
+  display: block;
+}
+
+.nav-toggle__menu {
+  display: none;
+}
+
+.nav-toggle--open .nav-toggle__menu {
+  display: block;
+}

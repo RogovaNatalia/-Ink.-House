@@ -1,0 +1,29 @@
+.footer-grid {
+  display: grid;
+  grid-template-areas:
+    "logo  ."
+    "phone rep"
+    "new about";
+  gap: 20px 40px;
+}
+
+.footer__logo {
+  grid-area: logo;
+  grid-column: logo / span 2;
+}
+
+.footer-phone {
+  grid-area: phone;
+}
+
+.footer-menu__column-rep {
+  grid-area: rep;
+}
+
+.footer-menu__column-new {
+  grid-area: new;
+}
+
+.footer-menu__column-about:last-child {
+  grid-area: about;
+}

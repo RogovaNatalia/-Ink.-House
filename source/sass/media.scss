@@ -1,0 +1,35 @@
+@use "../sass/variables.scss";
+
+@mixin for-mobile {
+  @media (max-width: (variables.$tablet_510-width - 1)) {
+    @content;
+  }
+}
+
+@mixin for-tablet_510 {
+  @media (min-width: variables.$tablet_510-width) and (max-width: (variables.$tablet_690-width - 1)) {
+    @content;
+  }
+}
+
+@mixin for-tablet_690 {
+  @media (min-width: variables.$tablet_690-width) and (max-width: (variables.$desktop-width - 1)) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: variables.$desktop-width) {
+    @content;
+  }
+}
+
+// @mixin for-tablet-and-desktop {
+//   @include for-tablet {
+//     @content;
+//   }
+
+//   @include for-desktop {
+//     @content;
+//   }
+// }
