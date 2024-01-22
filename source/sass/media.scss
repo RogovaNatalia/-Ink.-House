@@ -24,6 +24,12 @@
   }
 }
 
+@mixin for-tablet_510_and_above {
+  @media (min-width: variables.$tablet_510-width) {
+    @content;
+  }
+}
+
 // @mixin for-tablet-and-desktop {
 //   @include for-tablet {
 //     @content;

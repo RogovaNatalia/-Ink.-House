@@ -1,6 +1,11 @@
+@use "../sass/media.scss";
+
 .footer-phone {
   display: flex;
   flex-direction: column;
+  @include media.for-tablet_510 {
+    justify-self: end;
+  }
 }
 
 .footer-phone__link {
@@ -8,6 +13,10 @@
   font-size: 16px;
   margin-bottom: 8px;
   text-decoration: none;
+
+  @include media.for-tablet_510 {
+    font-size: 20px;
+  }
 }
 
 .footer-phone__text {

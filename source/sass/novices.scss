@@ -1,14 +1,16 @@
 @use "../sass/title.scss";
+@use "../sass/media.scss";
 
 .novices {
-  // background-image: url(../img/novices-bg-mobile.jpg);
-  background: url("../img/novices-bg-mobile.jpg"), lightgray 0 -176px / 100% 170% no-repeat;
-  // position: relative;
-  // overflow: hidden;
+  background-image: url("../img/novices-bg-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 60px;
+
+  @include media.for-tablet_510 {
+    background-image: url("../img/novices-bg-tablet_510.jpg");
+  }
 }
 
 .novices__title {
@@ -56,4 +58,22 @@
   text-align: center;
   border: 1px solid transparent;
   margin-bottom: 51px;
+
+  &:hover {
+    background-color: #FAEB97;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #FAEB97;
+    border: 1px solid #A38314;
+  }
+
+  &:active {
+    background-color: #D9B949;
+  }
+
+  @include media.for-tablet_510 {
+    width: 190px;
+}
 }

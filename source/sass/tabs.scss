@@ -1,3 +1,5 @@
+@use "../sass/media.scss";
+
 .tabs {
   display: flex;
   align-items: center;
@@ -11,20 +13,45 @@
 }
 
 .tabs-item:not(:last-child) {
-  margin-right: 20px;
+
+  @include media.for-mobile {
+    margin-right: 20px;
+  }
+
+  @include media.for-tablet_510 {
+    margin-right: 32px;
+  }
 }
 
 .tabs-item__btn {
   border-radius: 20px;
   background: #d4e8d9;
-  padding: 10px 20px;
+  padding: 8px 18px;
   font-size: 18px;
   color: #2c2d35;
   border: 0;
   cursor: pointer;
+  border: 2px solid transparent;
 
   &--active {
     color: #f4f6f5;
     background: #376b44;
+  }
+
+  &:hover {
+    color: #F4F6F5;
+    background-color: #598D66;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #D4E8D9;
+    color: #2C2D35;
+    border: 2px solid #598D66;
+  }
+
+  &:active {
+    color: #F4F6F5;
+    background-color: #376B44;
   }
 }

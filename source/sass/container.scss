@@ -1,4 +1,13 @@
+@use "../sass/media.scss";
+
 .container {
-  padding: 0 15px;
-  // min-width: 320px;
+
+  @include media.for-mobile {
+    padding: 0 15px;
+  }
+
+  @include media.for-tablet_510 {
+    padding: 0px 33px;
+  }
+
 }

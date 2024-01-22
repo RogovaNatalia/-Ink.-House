@@ -1,9 +1,17 @@
+@use "../sass/media.scss";
+
 .nav__list {
   list-style: none;
   padding: 0;
+
+  @include media.for-tablet_510 {
+    display: flex;
+  }
+
 }
 
 .nav__item {
+  @include media.for-mobile {
   margin-top: 50px;
 
   &:first-child {
@@ -11,9 +19,33 @@
   }
 }
 
+@include media.for-tablet_510 {
+  margin-right: 60px;
+
+}
+}
+
 
 .nav__link {
   text-decoration: none;
   color: #2c2d35;
   font-size: 18px;
+
+/* Стили для наведения */
+&:hover {
+  color: #598D66;
+}
+
+/* Стили для фокуса (например, при нажатии клавиши Tab) */
+&:focus {
+  outline: none;
+  background-color: #D4E8D9;
+  color: #2C2D35;
+}
+
+/* Стили для активного состояния (например, при нажатии на кнопку мыши) */
+&:active {
+  color: #376B44;
+}
+
 }

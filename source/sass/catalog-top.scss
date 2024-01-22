@@ -3,6 +3,7 @@
 .catalog-top__title {
   @include title.title();
   margin-bottom: 20px;
+  line-height: 110%;
 }
 
 .catalog-top__tabs {

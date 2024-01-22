@@ -22,3 +22,20 @@
 .footer-social__item:not(:last-child) {
   margin-right: 30px;
 }
+
+.footer-social__link {
+
+&:hover svg path {
+  fill: #598D66;
+}
+&:focus svg path{
+  fill: #598D66;
+}
+&:focus svg {
+  background-color: #D4E8D9;
+}
+
+&:active svg path {
+  fill: #376B44;
+}
+}

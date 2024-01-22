@@ -1,3 +1,5 @@
+@use "../sass/media.scss";
+
 .main-header {
 
 }
@@ -9,10 +11,31 @@
 
 .main-header__brand {
   display: flex;
-  background-color: #ffffff;
-  margin: 0 -15px;
+  background-color: #E1EDE6;
   text-align: center;
   justify-content: center;
+  position: relative;
+
+  @include media.for-mobile {
+    margin: 0 -15px;
+    background-color: #ffffff;
+  }
+
+  @include media.for-tablet_510 {
+    margin: 0 -33px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #c3d1c6;
+      position: absolute;
+      left: 33px;
+      right: 33px;
+      bottom: 0;
+    }
+}
+
 }
 
 .main-header__logo {
@@ -25,11 +48,16 @@
 
 .main-header__nav-toggle {
   position: relative;
+  @include media.for-mobile {
+
   padding: 16px 0;
+}
 }
 
 .main-header__nav {
-  display: none;
+  @include media.for-mobile {
+    display: none;
+  }
 }
 
 

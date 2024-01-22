@@ -1,5 +1,12 @@
+@use "../sass/media.scss";
+
 .catalog-list{
 
+  @include media.for-tablet_510 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .catalog-list__item {

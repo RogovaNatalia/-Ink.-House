@@ -1,7 +1,13 @@
+@use "../sass/media.scss";
+
 .team-list{
 
 }
 
 .team-list__item {
   margin-right: 25px;
+
+  @include media.for-tablet_510 {
+    margin-right: 30px;
+  }
 }

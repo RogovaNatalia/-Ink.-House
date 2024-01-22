@@ -1,5 +1,10 @@
-.nav-toggle {
+@use "../sass/media.scss";
 
+.nav-toggle {
+  @include media.for-tablet_510_and_above {
+    display: flex;
+    // justify-content: space-between;
+  }
 }
 
 .nav-toggle__open,
@@ -12,6 +17,10 @@
 
 .nav-toggle__open {
   display: block;
+
+  @include media.for-tablet_510_and_above {
+    display: none;
+  }
 }
 
 .nav-toggle--open .nav-toggle__open {
@@ -32,10 +41,15 @@
 
 .nav-toggle--open .nav-toggle__close {
   display: block;
+    @include media.for-tablet_510_and_above {
+    display: none;
+  }
 }
 
 .nav-toggle__menu {
-  display: none;
+  @include media.for-mobile {
+    display: none;
+  }
 }
 
 .nav-toggle--open .nav-toggle__menu {

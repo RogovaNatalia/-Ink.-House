@@ -1,19 +1,38 @@
+@use "../sass/media.scss";
+
 .footer-grid {
   display: grid;
+
+  @include media.for-mobile {
+    grid-template-areas:
+      "logo  ."
+      "phone rep"
+      "new about";
+    gap: 20px 40px;
+}
+@include media.for-tablet_510 {
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
   grid-template-areas:
-    "logo  ."
-    "phone rep"
-    "new about";
-  gap: 20px 40px;
+    "logo  . phone"
+    "rep new about";
+  gap: 30px;
+}
+
 }
 
 .footer__logo {
   grid-area: logo;
+  @include media.for-mobile {
   grid-column: logo / span 2;
+  }
 }
 
 .footer-phone {
   grid-area: phone;
+  @include media.for-tablet_510 {
+    grid-column: span 2 / phone;
+    }
 }
 
 .footer-menu__column-rep {

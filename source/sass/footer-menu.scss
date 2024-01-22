@@ -1,4 +1,5 @@
 @use "../sass/title.scss";
+@use "../sass/media.scss";
 
 .footer-menu__column {
 
@@ -8,6 +9,10 @@
   @include title.title();
   font-size: 16px;
   margin-bottom: 6px;
+
+  @include media.for-tablet_510 {
+    font-size: 20px;
+  }
 }
 
 .footer-menu__list {
