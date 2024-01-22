@@ -5,6 +5,10 @@
     display: flex;
     // justify-content: space-between;
   }
+
+  @include media.for-tablet_690 {
+    align-items: center;
+  }
 }
 
 .nav-toggle__open,

@@ -2,15 +2,24 @@
 
 .main-header {
 
+  @include media.for-tablet_690 {
+    padding: 31px 0;
+    background-color: #E1EDE6;
+  }
 }
 
 .main-header__container {
   margin: 0;
   background-color: #e1ede6;
+
+  @include media.for-tablet_690 {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-header__brand {
-  display: flex;
+  // display: flex;
   background-color: #E1EDE6;
   text-align: center;
   justify-content: center;
@@ -36,6 +45,10 @@
     }
 }
 
+@include media.for-tablet_690 {
+ text-align: left;
+}
+
 }
 
 .main-header__logo {
@@ -44,6 +57,10 @@
 
 .main-header__logo-image {
   margin: 16px 0;
+
+  @include media.for-tablet_690 {
+    margin: 0;
+  }
 }
 
 .main-header__nav-toggle {
@@ -57,6 +74,10 @@
 .main-header__nav {
   @include media.for-mobile {
     display: none;
+  }
+
+  @include media.for-tablet_690 {
+display: flex;
   }
 }
 
