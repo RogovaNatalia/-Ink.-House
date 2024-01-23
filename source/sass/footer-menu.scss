@@ -2,8 +2,88 @@
 @use "../sass/media.scss";
 
 .footer-menu__column {
+  @include media.for-tablet_690{
+  margin-right: 60px;
+}
+}
+
+
+@include media.for-mobile{
+  .footer-menu__column-rep {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .footer-menu__column-new {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .footer-menu__column-about {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 
 }
+
+@include media.for-tablet_510{
+  .footer-menu__column-rep {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .footer-menu__column-new {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+
+  .footer-menu__column-about {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+}
+
+  @include media.for-tablet_690{
+    .footer-menu__column-rep {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .footer-menu__column-new {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      // justify-self: center;
+    }
+
+    .footer-menu__column-about {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      // justify-self: end;
+    }
+
+}
+
+@include media.for-desktop{
+  .footer-menu__column-rep {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .footer-menu__column-new {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    // justify-self: center;
+  }
+
+  .footer-menu__column-about {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    // justify-self: end;
+  }
+}
+
 
 .footer-menu__title {
   @include title.title();
