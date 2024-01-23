@@ -1,14 +1,27 @@
+
+@use "../sass/media.scss";
+
 .footer-social {
   display: flex;
   flex-direction: column;
 }
 
 .footer-social::before {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #c3d1c6;
-  margin: 20px 0;
+  @include media.for-mobile {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #c3d1c6;
+    margin: 20px 0;
+  }
+
+  @include media.for-tablet_510 {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #c3d1c6;
+    margin: 20px 0;
+  }
 }
 
 .footer-social__list {

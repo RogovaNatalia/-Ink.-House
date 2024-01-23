@@ -1,9 +1,14 @@
 @use "../sass/title.scss";
+@use "../sass/media.scss";
 
 .catalog-top__title {
   @include title.title();
   margin-bottom: 20px;
   line-height: 110%;
+
+  @include media.for-tablet_690 {
+    margin: 0;
+  }
 }
 
 .catalog-top__tabs {

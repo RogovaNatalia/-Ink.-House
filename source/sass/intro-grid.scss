@@ -1,7 +1,7 @@
 @use "../sass/media.scss";
 
 .intro-grid {
-  @include media.for-tablet_510 {
+  @include media.for-tablet_510_and_above {
     display: flex;
 }
 }

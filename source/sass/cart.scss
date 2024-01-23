@@ -1,17 +1,18 @@
 @use "../sass/media.scss";
 .cart {
+  @include media.for-mobile {
   position: absolute;
   top: 21px;
   right: 15px;
-
+}
   @include media.for-tablet_510 {
+    position: absolute;
     right: 0;
     top: 14px;
   }
 
   @include media.for-tablet_690 {
-    right: 0;
-    top: 33px;
+
   }
 }
 

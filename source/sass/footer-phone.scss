@@ -22,4 +22,8 @@
 .footer-phone__text {
   color: #86928b;
   font-size: 16px;
+
+  @include media.for-tablet_690 {
+    font-size: 18px;
+  }
 }

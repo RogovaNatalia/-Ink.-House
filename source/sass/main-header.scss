@@ -3,7 +3,7 @@
 .main-header {
 
   @include media.for-tablet_690 {
-    padding: 31px 0;
+    padding: 33px 0 32px;
     background-color: #E1EDE6;
   }
 }
@@ -78,6 +78,8 @@
 
   @include media.for-tablet_690 {
 display: flex;
+position: relative;
+margin-right: 60px;
   }
 }
 

@@ -10,7 +10,7 @@
   font-size: 16px;
   margin-bottom: 6px;
 
-  @include media.for-tablet_510 {
+  @include media.for-tablet_510_and_above {
     font-size: 20px;
   }
 }
@@ -32,4 +32,9 @@
 .footer-menu__link {
   text-decoration: none;
   color: #86928b;
+  font-size: 16px;
+
+  @include media.for-tablet_510_and_above {
+    font-size: 18px;
+  }
 }

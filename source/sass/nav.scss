@@ -30,31 +30,28 @@
 }
 
 @include media.for-tablet_690 {
-  margin-right: 60px;
+  &:not(:last-child) {
+    margin-right: 60px;
+  }
 }
 }
-
 
 .nav__link {
   text-decoration: none;
   color: #2c2d35;
   font-size: 18px;
 
-/* Стили для наведения */
 &:hover {
   color: #598D66;
 }
 
-/* Стили для фокуса (например, при нажатии клавиши Tab) */
 &:focus {
   outline: none;
   background-color: #D4E8D9;
   color: #2C2D35;
 }
 
-/* Стили для активного состояния (например, при нажатии на кнопку мыши) */
 &:active {
   color: #376B44;
 }
-
 }

@@ -1,3 +1,5 @@
+@use "../sass/media.scss";
+
 .footer {
   background-color: #e1ede6;
   padding-top: 26px;
@@ -5,5 +7,9 @@
 }
 
 .footer__container {
-  // display: grid;
+
+  // @include media.for-tablet_690 {
+  //   display: grid;
+  //   grid-template-rows: auto auto;
+  // }
 }

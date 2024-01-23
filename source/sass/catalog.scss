@@ -1,8 +1,19 @@
+@use "../sass/media.scss";
+
 .catalog__top {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 20px;
+
+  @include media.for-tablet_510 {
+    flex-direction: column;
+
+      }
+
+  @include media.for-tablet_690 {
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
 }
 
 .catalog__list {

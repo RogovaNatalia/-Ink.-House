@@ -7,6 +7,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  @include media.for-tablet_690 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .catalog-list__item {

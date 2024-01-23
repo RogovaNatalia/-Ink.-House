@@ -1,4 +1,5 @@
 @use "../sass/title.scss";
+@use "../sass/media.scss";
 
 .about {
   margin-top: 59px;
@@ -21,6 +22,11 @@
   margin-top: 20px;
   font-size: 16px;
   line-height: 140%;
+
+  @include media.for-tablet_690 {
+    font-size: 18px;
+    line-height: 150%;
+  }
 }
 
 .about__team {

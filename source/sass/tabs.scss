@@ -5,7 +5,11 @@
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
+
+  @include media.for-tablet_690 {
   width: 100%;
+  justify-content: end;
+}
 }
 
 .tabs-item {
@@ -21,6 +25,9 @@
   @include media.for-tablet_510 {
     margin-right: 32px;
   }
+  @include media.for-tablet_690 {
+  margin-right: 32px;
+}
 }
 
 .tabs-item__btn {

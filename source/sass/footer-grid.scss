@@ -18,6 +18,11 @@
     "rep new about";
   gap: 30px;
 }
+@include media.for-tablet_690 {
+  display: block;
+  // grid-template-columns: repeat(4, 1fr); /* Четыре столбца с равной шириной */
+  // gap: 20px; /* Расстояние между элементами */
+  }
 
 }
 
@@ -26,6 +31,9 @@
   @include media.for-mobile {
   grid-column: logo / span 2;
   }
+  // @include media.for-tablet_690 {
+  //   grid-column: span 2;
+  // }
 }
 
 .footer-phone {
@@ -33,6 +41,9 @@
   @include media.for-tablet_510 {
     grid-column: span 2 / phone;
     }
+    // @include media.for-tablet_690 {
+    //   grid-column: span 2;
+    // }
 }
 
 .footer-menu__column-rep {

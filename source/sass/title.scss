@@ -1,7 +1,13 @@
+@use "../sass/media.scss";
+
 @mixin title {
   margin: 0;
   font-size: 24px;
   line-height: 100%;
   color: #2c2d35;
   font-weight: 500;
+
+  @include media.for-tablet_690 {
+    font-size: 30px;
+  }
 }
