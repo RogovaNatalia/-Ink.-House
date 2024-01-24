@@ -16,6 +16,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @include media.for-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-header__brand {
@@ -45,9 +50,13 @@
     }
 }
 
-@include media.for-tablet_690 {
- text-align: left;
-}
+    @include media.for-tablet_690 {
+    text-align: left;
+    }
+
+    // @include media.for-desktop {
+    //   text-align: center;
+    //   }
 
 }
 
@@ -65,10 +74,10 @@
 
 .main-header__nav-toggle {
   position: relative;
-  @include media.for-mobile {
 
+  @include media.for-mobile {
   padding: 16px 0;
-}
+  }
 }
 
 .main-header__nav {
@@ -76,10 +85,10 @@
     display: none;
   }
 
-  @include media.for-tablet_690 {
-display: flex;
-position: relative;
-margin-right: 60px;
+  @include media.for-tablet_690_and_above {
+  display: flex;
+  position: relative;
+  margin-right: 60px;
   }
 }
 

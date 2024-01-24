@@ -45,6 +45,7 @@
 
 .nav-toggle--open .nav-toggle__close {
   display: block;
+
     @include media.for-tablet_510_and_above {
     display: none;
   }

@@ -29,3 +29,9 @@
     @content;
   }
 }
+
+@mixin for-tablet_690_and_above {
+  @media (min-width: variables.$tablet_690-width) {
+    @content;
+  }
+}

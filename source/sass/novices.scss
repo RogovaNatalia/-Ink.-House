@@ -7,20 +7,47 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 60px;
+  overflow: hidden;
 
   @include media.for-tablet_510 {
     background-image: url("../img/novices-bg-tablet_510.jpg");
   }
+
+  @include media.for-tablet_690 {
+    background-image: url("../img/novices-bg-tablet_690.jpg");
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 85%;
+      background: rgba(13, 43, 67, 0.7);
+      mix-blend-mode: multiply;
+      filter: blur(157.5px);
+    }
+  }
 }
+
+
 
 .novices__title {
   @include title.title();
   color: #ffffff;
-  position: relative;
   line-height: 100%;
   margin-bottom: 20px;
-  padding-top: 50px;
-  padding-left: 60px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+
+  @include media.for-tablet_510 {
+    max-width: 340px;
+  }
+
+  @include media.for-tablet_690 {
+    max-width: 430px;
+    margin-bottom: 30px;
+  }
 }
 
 .novices__title::before {
@@ -28,17 +55,26 @@
   background-image: url("../img/star.svg");
   background-repeat: no-repeat;
   background-position: left top;
-  position: absolute;
-  top: 50px;
-  left: 0;
   width: 50px;
   height: 50px;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 10px;
+
+  @include media.for-tablet_690 {
+    background-image: url("../img/Star_tablet_690.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
 }
 
 
 .novices__content {
   color: #ffffff;
   margin-bottom: 30px;
+  position: relative;
+
 }
 
 .novices__description {
@@ -50,6 +86,7 @@
   @include media.for-tablet_690 {
     font-size: 18px;
     line-height: 150%;
+    margin-bottom: 20px;
   }
 }
 
@@ -63,6 +100,7 @@
   text-align: center;
   border: 1px solid transparent;
   margin-bottom: 51px;
+  position: relative;
 
   &:hover {
     background-color: #FAEB97;
@@ -80,5 +118,9 @@
 
   @include media.for-tablet_510 {
     width: 190px;
+}
+@include media.for-tablet_690 {
+  width: 210px;
+  margin-bottom: 70px;
 }
 }

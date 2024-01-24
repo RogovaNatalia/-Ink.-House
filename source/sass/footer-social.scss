@@ -42,6 +42,7 @@
     height: 1px;
     background-color: #c3d1c6;
     margin-bottom: 16px;
+    margin-top: -4px;
   }
 }
 
@@ -52,7 +53,7 @@
   padding: 0;
   list-style-type: none;
 
-  @include media.for-tablet_690 {
+  @include media.for-tablet_690_and_above {
 justify-content: start;
 }
 }

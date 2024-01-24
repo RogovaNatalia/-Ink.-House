@@ -7,7 +7,7 @@
 .team-list__item {
   margin-right: 25px;
 
-  @include media.for-tablet_510 {
+  @include media.for-tablet_510_and_above {
     margin-right: 30px;
   }
 }
