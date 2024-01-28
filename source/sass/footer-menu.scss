@@ -2,13 +2,12 @@
 @use "../sass/media.scss";
 
 .footer-menu__column {
-  @include media.for-tablet_690{
-  margin-right: 60px;
-}
+  @include media.for-tablet_690 {
+    margin-right: 60px;
+  }
 }
 
-
-@include media.for-mobile{
+@include media.for-mobile {
   .footer-menu__column-rep {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -23,10 +22,9 @@
     grid-column: 2/3;
     grid-row: 3/4;
   }
-
 }
 
-@include media.for-tablet_510{
+@include media.for-tablet_510 {
   .footer-menu__column-rep {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -62,10 +60,10 @@
       grid-row: 2/4;
       // justify-self: end;
     }
-
 }
 
-@include media.for-desktop{
+@include media.for-desktop {
+
   .footer-menu__column-rep {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -84,11 +82,10 @@
   }
 }
 
-
 .footer-menu__title {
   @include title.title();
-  font-size: 16px;
-  margin-bottom: 6px;
+    font-size: 16px;
+    margin-bottom: 6px;
 
   @include media.for-tablet_510_and_above {
     font-size: 20px;
@@ -99,10 +96,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.footer-menu__item{
-
 }
 
 .footer-menu__item:not(:last-child) {

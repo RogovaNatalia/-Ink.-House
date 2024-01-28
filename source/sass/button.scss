@@ -7,7 +7,7 @@
   color: #598d66;
   text-decoration: none;
 
-  @include media.for-tablet_690 {
+  @include media.for-tablet_690_and_above {
     font-size: 20px;
   }
 }

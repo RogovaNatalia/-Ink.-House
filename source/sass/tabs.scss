@@ -7,13 +7,9 @@
   white-space: nowrap;
 
   @include media.for-tablet_690 {
-  width: 100%;
-  justify-content: end;
-}
-}
-
-.tabs-item {
-
+    width: 100%;
+    justify-content: end;
+  }
 }
 
 .tabs-item:not(:last-child) {
@@ -25,9 +21,10 @@
   @include media.for-tablet_510 {
     margin-right: 32px;
   }
-  @include media.for-tablet_690 {
+
+  @include media.for-tablet_690_and_above {
   margin-right: 32px;
-}
+  }
 }
 
 .tabs-item__btn {
@@ -60,5 +57,9 @@
   &:active {
     color: #F4F6F5;
     background-color: #376B44;
+  }
+
+  @include media.for-desktop {
+    font-size: 20px;
   }
 }

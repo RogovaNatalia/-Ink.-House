@@ -13,7 +13,6 @@
     align-items: center;
     margin: 0;
   }
-
 }
 
 .nav__item {
@@ -41,21 +40,21 @@
   color: #2c2d35;
   font-size: 18px;
 
-&:hover {
-  color: #598D66;
-}
+  &:hover {
+    color: #598D66;
+  }
 
-&:focus {
-  outline: none;
-  background-color: #D4E8D9;
-  color: #2C2D35;
-}
+  &:focus {
+    outline: none;
+    background-color: #D4E8D9;
+    color: #2C2D35;
+  }
 
-&:active {
-  color: #376B44;
-}
+  &:active {
+    color: #376B44;
+  }
 
-@include media.for-desktop {
-  font-size: 20px;
-}
+  @include media.for-desktop {
+    font-size: 20px;
+  }
 }

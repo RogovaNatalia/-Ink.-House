@@ -10,4 +10,8 @@
   @include media.for-tablet_690 {
     font-size: 30px;
   }
+
+  @include media.for-desktop {
+    font-size: 40px;
+  }
 }

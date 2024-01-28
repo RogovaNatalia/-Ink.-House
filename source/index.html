@@ -1,335 +1,343 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Ink. House</title>
-  </head>
-  <body class="page">
-      <header class="main-header">
-        <div class="container main-header__container">
-          <div class="main-header__brand">
-            <a class="main-header__logo">
-              <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип».">
-            </a>
-          </div>
-          <div class="main-header__nav-toggle nav-toggle">
-            <button  id="openMenuBtn" class="nav-toggle__open" type="button">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z" fill="#4C5866"/>
-                  </svg>
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon-23x23.png" sizes="23x23" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ink. House</title>
+</head>
+<body class="page">
+  <header class="main-header">
+    <div class="container main-header__container">
+      <div class="main-header__brand">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип».">
+        </a>
+      </div>
+      <div class="main-header__nav-toggle nav-toggle">
+        <button  id="openMenuBtn" class="nav-toggle__open" type="button">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z" fill="#4C5866"/>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-            <button id="closeMenuBtn" class="nav-toggle__close" type="button">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6.75C6.94891 6.55109 7.2187 6.43934 7.5 6.43934C7.7813 6.43934 8.05109 6.55109 8.25 6.75L23.25 21.75C23.4489 21.9489 23.5606 22.2187 23.5606 22.5C23.5606 22.7813 23.4489 23.0511 23.25 23.25C23.0511 23.4489 22.7813 23.5606 22.5 23.5606C22.2187 23.5606 21.9489 23.4489 21.75 23.25L6.75 8.25C6.55109 8.05109 6.43934 7.7813 6.43934 7.5C6.43934 7.21869 6.55109 6.94891 6.75 6.75Z" fill="#2C2D35"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 6.75C23.4489 6.94891 23.5607 7.2187 23.5607 7.5C23.5607 7.7813 23.4489 8.05109 23.25 8.25L8.25001 23.25C8.0511 23.4489 7.78132 23.5606 7.50001 23.5606C7.21871 23.5606 6.94893 23.4489 6.75002 23.25C6.55111 23.0511 6.43936 22.7813 6.43936 22.5C6.43936 22.2187 6.5511 21.9489 6.75002 21.75L21.75 6.75C21.9489 6.55109 22.2187 6.43934 22.5 6.43934C22.7813 6.43934 23.0511 6.55109 23.25 6.75Z" fill="#2C2D35"/>
-                </svg>
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
+        <button id="closeMenuBtn" class="nav-toggle__close" type="button">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6.75C6.94891 6.55109 7.2187 6.43934 7.5 6.43934C7.7813 6.43934 8.05109 6.55109 8.25 6.75L23.25 21.75C23.4489 21.9489 23.5606 22.2187 23.5606 22.5C23.5606 22.7813 23.4489 23.0511 23.25 23.25C23.0511 23.4489 22.7813 23.5606 22.5 23.5606C22.2187 23.5606 21.9489 23.4489 21.75 23.25L6.75 8.25C6.55109 8.05109 6.43934 7.7813 6.43934 7.5C6.43934 7.21869 6.55109 6.94891 6.75 6.75Z" fill="#2C2D35"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 6.75C23.4489 6.94891 23.5607 7.2187 23.5607 7.5C23.5607 7.7813 23.4489 8.05109 23.25 8.25L8.25001 23.25C8.0511 23.4489 7.78132 23.5606 7.50001 23.5606C7.21871 23.5606 6.94893 23.4489 6.75002 23.25C6.55111 23.0511 6.43936 22.7813 6.43936 22.5C6.43936 22.2187 6.5511 21.9489 6.75002 21.75L21.75 6.75C21.9489 6.55109 22.2187 6.43934 22.5 6.43934C22.7813 6.43934 23.0511 6.55109 23.25 6.75Z" fill="#2C2D35"/>
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
 
-            <nav class="main-header__nav nav-toggle__menu nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#catalog" class ="nav__link">
-                    Репродукции
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#novices" class ="nav__link">
-                    Новинки
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#about" class ="nav__link">
-                    О нас
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="main-header__cart nav-toggle__cart cart">
-                <a class="cart__image" href="#">
-                </a>
-            </div>
-          </div>
-        </div>
-      </header>
-    <main class="main-container">
-          <section class="intro">
-            <div class="container intro-grid">
-              <picture class="intro__image">
-                <source srcset="img/hero_desktop.png, img/hero_desktop_2x.png 2x" media="(min-width: 1440px)">
-                <source srcset="img/hero_tablet_690.png, img/hero_tablet_690_2x.png 2x" media="(min-width: 768px)">
-                <source srcset="img/hero.png, img/hero_2x.png 2x" media="(min-width: 768px)">
-                <img src="img/hero.png" aria-hidden="true">
-              </picture>
-              <div class="intro__content">
-                <h1 class="title intro__title">Реплики картин<br> от <span>Ink. House</span></h1>
-                <p class="intro__description">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-                <a class=" button intro__link" href="#">Продукция</a>
-              </div>
-            </div>
-          </section>
-          <section class="catalog" id="catalog">
-            <div class="container">
-              <div class="catalog__top catalog-top">
-                <h2 class="title catalog-top__title">Рeпродукции</h2>
-                <ul class="catalog-top__tabs tabs">
-                  <li class="tabs-item">
-                    <button class="tabs-item__btn tabs-item__btn--active">Франция</button>
-                  </li>
-                  <li class="tabs-item">
-                    <button class="tabs-item__btn">Германия</button>
-                  </li>
-                  <li class="tabs-item">
-                    <button class="tabs-item__btn">Англия</button>
-                  </li>
-                </ul>
-              </div>
-
-              <ul class="catalog__list catalog-list">
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Amur's_hunt_tablet_690.jpg, img/catalog/Amur's_hunt_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Amur's_hunt_tablet_510.jpg, img/catalog/Amur's_hunt_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Amur's_hunt.jpg" alt="Охота Амура" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Марсель Руссо</span>
-                      <h3 class=" title product__title">Охота Амура</h3>
-                      <span class="product__info">Холст, масло (50х80)</span>
-                      <span class="product__price">14 500 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Lady_with_a_dog_tablet_690.jpg, img/catalog/Lady_with_a_dog_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Lady_with_a_dog_tablet_510.jpg, img/catalog/Lady_with_a_dog_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Lady_with_a_dog.jpg" alt="Дама с собачкой" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Анри Селин</span>
-                      <h3 class="title product__title">Дама с собачкой</h3>
-                      <span class="product__info">Акрил, бумага (50х80)</span>
-                      <span class="product__price">16 500 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Procedure_tablet_690.jpg, img/catalog/Procedure_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Procedure_tablet_510.jpg, img/catalog/Procedure_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Procedure.jpg" alt="Процедура" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Франсуа Дюпон</span>
-                      <h3 class="title product__title">Процедура</h3>
-                      <span class="product__info">Цветная литография (40х60) </span>
-                      <span class="product__price">20 000 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Rose_tablet_690.jpg, img/catalog/Rose_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Rose_tablet_510.jpg, img/catalog/Rose_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Rose.jpg" alt="Роза" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Луи Детуш</span>
-                      <h3 class="title product__title">Роза</h3>
-                      <span class="product__info">Бумага, акрил (50х80) </span>
-                      <span class="product__price">12 000 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Bird_meal_tablet_690.jpg, img/catalog/Bird_meal_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Bird_meal_tablet_510.jpg, img/catalog/Bird_meal_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Bird_meal.jpg" alt="Птичья трапеза" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Франсуа Дюпон</span>
-                      <h3 class="title product__title">Птичья трапеза</h3>
-                      <span class="product__info">Цветная литография (40х60)</span>
-                      <span class="product__price">22 500 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-                <li class="catalog-list__item">
-                  <article class="product">
-                    <picture>
-                      <source srcset="img/catalog/Landscape_with_fish_tablet_690.jpg, img/catalog/Landscape_with_fish_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
-                      <source srcset="img/catalog/Landscape_with_fish_tablet_510.jpg, img/catalog/Landscape_with_fish_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
-                      <img src="img/catalog/Landscape_with_fish.jpg" alt="Пейзаж с рыбой" class="product__image">
-                    </picture>
-                    <div class="product__content">
-                      <span class="product__author">Пьер Моранж</span>
-                      <h3 class="title product__title">Пейзаж с рыбой</h3>
-                      <span class="product__info">Цветная литография (40х60)</span>
-                      <span class="product__price">20 000 руб</span>
-                      <button class="button product__btn">В корзину</button>
-                    </div>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="novices" id="novices">
-            <div class="container">
-              <h2 class="title novices__title">Новая коллекция французских авторов</h2>
-              <div class="novices__content">
-                <p class="novices__description">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
-                <p class="novices__description">  Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
-              </div>
-              <a href="#" class=" button novices__btn">Ознакомиться</a>
-            </div>
-          </section>
-          <section class="about" id="about">
-            <div class="container">
-              <picture>
-                <source srcset="img/about-img_tablet_690.png, img/about-img_tablet_690_2x.png 2x" media="(min-width: 768px)">
-                <source srcset="img/about-img_tablet_510.png, img/about-img_tablet_510_2x.png 2x" media="(min-width: 576px)">
-                <img class="about__image" src="img/about-img.png" aria-hidden="true">
-              </picture>
-              <h2 class="title about__title">Наша команда</h2>
-              <p class="about__description">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
-              <div class="about__team team-list">
-                <picture>
-                  <source srcset="img/about-1.png, img/about-1_2x.png 2x" media="(min-width: 576px)">
-                  <img src="img/about-1.png" alt="Член команды" class="team-list__item">
-                </picture>
-                <picture>
-                  <source srcset="img/about-2.png, img/about-2_2x.png 2x" media="(min-width: 576px)">
-                  <img src="img/about-2.png" alt="Член команды" class="team-list__item">
-                </picture>
-                <picture>
-                  <source srcset="img/about-3.png, img/about-3_2x.png 2x" media="(min-width: 576px)">
-                  <img src="img/about-1.png" alt="Член команды" class="team-list__item">
-                </picture>
-              </div>
-            </div>
-          </section>
-    </main>
-    <footer class="footer">
-      <section class="container footer__container">
-        <div class="footer-grid">
-          <a class="footer__logo">
-            <img class="footer__logo-image" src="img/logo-footer.svg" alt="Логотип».">
+        <nav class="main-header__nav nav-toggle__menu nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#catalog" class ="nav__link">
+                Репродукции
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#novices" class ="nav__link">
+                Новинки
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class ="nav__link">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__cart nav-toggle__cart cart">
+          <a class="cart__image" href="#">
           </a>
-          <div class="footer-phone">
-            <a href="tel:+79995435454" class="footer-phone__link">+7 (999) 543-54-54</a>
-            <span class="footer-phone__text">Мастерская</span>
-          </div>
-          <div class="footer-menu__column footer-menu__column-rep">
-            <h3 class="title footer-menu__title">Репродукции</h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Франция</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Германия</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Англия</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu__column footer-menu__column-new">
-            <h3 class="title footer-menu__title">Новинки</h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">2021</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">2020</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu__column footer-menu__column-about">
-            <h3 class=" title footer-menu__title">О нас</h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Художники</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Менеджеры</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-social">
-              <ul class="footer-social__list">
-                <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
-                    <span class="visually-hidden">Фейсбук</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_10_333)">
-                        <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" fill="#2C2D35"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_333">
-                          <rect width="24" height="24" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
-                    <span class="visually-hidden">Инстаграмм</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_25_1093)">
-                        <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#2C2D35"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_25_1093">
-                          <rect width="24" height="24" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
-                    <span class="visually-hidden">Ютюб</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_10_337)">
-                        <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#2C2D35"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_10_337">
-                          <rect width="24" height="24" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          <p class="footer-copyright">Ink. House
-            <sup class="reg">®</sup>
-            <span>All rights reserved</span>
-          </p>
         </div>
-      </section>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+    <section class="intro">
+      <div class="container intro-grid">
+        <picture class="intro__image">
+          <source srcset="img/hero_desktop.png, img/hero_desktop_2x.png 2x" media="(min-width: 1440px)">
+          <source srcset="img/hero_tablet_690.png, img/hero_tablet_690_2x.png 2x" media="(min-width: 768px)">
+          <source srcset="img/hero.png, img/hero_2x.png 2x" media="(min-width: 768px)">
+          <img src="img/hero.png" aria-hidden="true">
+        </picture>
+        <div class="intro__content">
+          <h1 class="title intro__title">Реплики картин<br> от <span>Ink. House</span></h1>
+          <p class="intro__description">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+          <a class=" button intro__link" href="#">Продукция</a>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="catalog__top catalog-top">
+          <h2 class="title catalog-top__title">Рeпродукции</h2>
+          <ul class="catalog-top__tabs tabs">
+            <li class="tabs-item">
+              <button class="tabs-item__btn tabs-item__btn--active">Франция</button>
+            </li>
+            <li class="tabs-item">
+              <button class="tabs-item__btn">Германия</button>
+            </li>
+            <li class="tabs-item">
+              <button class="tabs-item__btn">Англия</button>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="catalog__list catalog-list">
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Amur's_hunt_desktop.jpg, img/catalog/Amur's_hunt_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Amur's_hunt_tablet_690.jpg, img/catalog/Amur's_hunt_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Amur's_hunt_tablet_510.jpg, img/catalog/Amur's_hunt_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Amur's_hunt.jpg" alt="Охота Амура" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Марсель Руссо</span>
+                <h3 class=" title product__title">Охота Амура</h3>
+                <span class="product__info">Холст, масло (50х80)</span>
+                <span class="product__price">14 500 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Lady_with_a_dog_desktop.jpg, img/catalog/Lady_with_a_dog_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Lady_with_a_dog_tablet_690.jpg, img/catalog/Lady_with_a_dog_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Lady_with_a_dog_tablet_510.jpg, img/catalog/Lady_with_a_dog_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Lady_with_a_dog.jpg" alt="Дама с собачкой" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Анри Селин</span>
+                <h3 class="title product__title">Дама с собачкой</h3>
+                <span class="product__info">Акрил, бумага (50х80)</span>
+                <span class="product__price">16 500 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Procedure_desktop.jpg, img/catalog/Procedure_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Procedure_tablet_690.jpg, img/catalog/Procedure_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Procedure_tablet_510.jpg, img/catalog/Procedure_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Procedure.jpg" alt="Процедура" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Франсуа Дюпон</span>
+                <h3 class="title product__title">Процедура</h3>
+                <span class="product__info">Цветная литография (40х60) </span>
+                <span class="product__price">20 000 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Rose_desktop.jpg, img/catalog/Rose_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Rose_tablet_690.jpg, img/catalog/Rose_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Rose_tablet_510.jpg, img/catalog/Rose_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Rose.jpg" alt="Роза" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Луи Детуш</span>
+                <h3 class="title product__title">Роза</h3>
+                <span class="product__info">Бумага, акрил (50х80) </span>
+                <span class="product__price">12 000 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Bird_meal_desktop.jpg, img/catalog/Bird_meal_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Bird_meal_tablet_690.jpg, img/catalog/Bird_meal_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Bird_meal_tablet_510.jpg, img/catalog/Bird_meal_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Bird_meal.jpg" alt="Птичья трапеза" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Франсуа Дюпон</span>
+                <h3 class="title product__title">Птичья трапеза</h3>
+                <span class="product__info">Цветная литография (40х60)</span>
+                <span class="product__price">22 500 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="product">
+              <picture>
+                <source srcset="img/catalog/Landscape_with_fish_desktop.jpg, img/catalog/Landscape_with_fish_desktop_2x.jpg 2x" media="(min-width: 1440px)">
+                <source srcset="img/catalog/Landscape_with_fish_tablet_690.jpg, img/catalog/Landscape_with_fish_tablet_690_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="img/catalog/Landscape_with_fish_tablet_510.jpg, img/catalog/Landscape_with_fish_tablet_510_2x.jpg 2x" media="(min-width: 576px)">
+                <img src="img/catalog/Landscape_with_fish.jpg" alt="Пейзаж с рыбой" class="product__image">
+              </picture>
+              <div class="product__content">
+                <span class="product__author">Пьер Моранж</span>
+                <h3 class="title product__title">Пейзаж с рыбой</h3>
+                <span class="product__info">Цветная литография (40х60)</span>
+                <span class="product__price">20 000 руб</span>
+                <button class="button product__btn">В корзину</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="novices" id="novices">
+      <div class="container">
+        <h2 class="title novices__title">Новая коллекция французских авторов</h2>
+        <div class="novices__content">
+          <p class="novices__description">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+          <p class="novices__description">  Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+        </div>
+        <a href="#" class=" button novices__btn">Ознакомиться</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <picture class="about__image">
+          <source srcset="img/about-img_desktop.png, img/about-img_desktop_2x.png 2x" media="(min-width: 1440px)">
+          <source srcset="img/about-img_tablet_690.png, img/about-img_tablet_690_2x.png 2x" media="(min-width: 768px)">
+          <source srcset="img/about-img_tablet_510.png, img/about-img_tablet_510_2x.png 2x" media="(min-width: 576px)">
+          <img  src="img/about-img.png" aria-hidden="true">
+        </picture>
+        <h2 class="title about__title">Наша команда</h2>
+        <p class="about__description">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
+        <div class="about__team team-list">
+          <picture>
+            <source srcset="img/about-1.png, img/about-1_2x.png 2x" media="(min-width: 576px)">
+            <img src="img/about-1.png" alt="Член команды" class="team-list__item">
+          </picture>
+          <picture>
+            <source srcset="img/about-2.png, img/about-2_2x.png 2x" media="(min-width: 576px)">
+            <img src="img/about-2.png" alt="Член команды" class="team-list__item">
+          </picture>
+          <picture>
+            <source srcset="img/about-3.png, img/about-3_2x.png 2x" media="(min-width: 576px)">
+            <img src="img/about-1.png" alt="Член команды" class="team-list__item">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="container footer__container">
+      <div class="footer-grid">
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="img/logo-footer.svg" alt="Логотип».">
+        </a>
+        <div class="footer-phone">
+          <a href="tel:+79995435454" class="footer-phone__link">+7 (999) 543-54-54</a>
+          <span class="footer-phone__text">Мастерская</span>
+        </div>
+        <div class="footer-menu__column footer-menu__column-rep">
+          <h3 class="title footer-menu__title">Репродукции</h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Франция</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Германия</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Англия</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu__column footer-menu__column-new">
+          <h3 class="title footer-menu__title">Новинки</h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">2021</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">2020</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu__column footer-menu__column-about">
+          <h3 class=" title footer-menu__title">О нас</h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Художники</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Менеджеры</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__link">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_10_333)">
+                    <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" fill="#2C2D35"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10_333">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__link">
+                <span class="visually-hidden">Инстаграмм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_25_1093)">
+                    <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#2C2D35"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_25_1093">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__link">
+                <span class="visually-hidden">Ютюб</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_10_337)">
+                    <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#2C2D35"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10_337">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">Ink. House
+          <sup class="reg">®</sup>
+          <span>All rights reserved</span>
+        </p>
+      </div>
+    </section>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
 </html>

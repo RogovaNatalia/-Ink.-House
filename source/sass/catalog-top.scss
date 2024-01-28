@@ -6,7 +6,7 @@
   margin-bottom: 20px;
   line-height: 110%;
 
-  @include media.for-tablet_690 {
+  @include media.for-tablet_690_and_above {
     margin: 0;
   }
 }

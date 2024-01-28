@@ -3,7 +3,6 @@
 .nav-toggle {
   @include media.for-tablet_510_and_above {
     display: flex;
-    // justify-content: space-between;
   }
 
   @include media.for-tablet_690 {

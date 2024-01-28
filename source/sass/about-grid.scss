@@ -1,0 +1,11 @@
+@use "../sass/media.scss";
+
+.about-grid {
+
+    @include media.for-desktop {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px 30px;
+  }
+}

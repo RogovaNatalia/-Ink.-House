@@ -24,7 +24,6 @@
 }
 
 .main-header__brand {
-  // display: flex;
   background-color: #E1EDE6;
   text-align: center;
   justify-content: center;
@@ -48,16 +47,11 @@
       right: 33px;
       bottom: 0;
     }
-}
+  }
 
-    @include media.for-tablet_690 {
-    text-align: left;
-    }
-
-    // @include media.for-desktop {
-    //   text-align: center;
-    //   }
-
+  @include media.for-tablet_690 {
+      text-align: left;
+  }
 }
 
 .main-header__logo {
@@ -90,9 +84,4 @@
   position: relative;
   margin-right: 60px;
   }
-}
-
-
-.main-header__cart {
-
 }

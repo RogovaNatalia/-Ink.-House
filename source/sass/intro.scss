@@ -34,6 +34,11 @@
   @include media.for-tablet_690 {
     font-size: 40px;
   }
+
+  @include media.for-desktop {
+    font-size: 60px;
+    margin-top: 145px;
+  }
 }
 
 .intro__title span {
@@ -53,10 +58,14 @@
     margin-bottom: 11px;
   }
 
-  @include media.for-tablet_690 {
+  @include media.for-tablet_690_and_above {
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 40px;
+  }
+
+  @include media.for-desktop {
+    margin-bottom: 60px;
   }
 
 }
@@ -65,22 +74,22 @@
   padding: 14px 29px;
   display: inline-block;
 
-&:hover {
-  color: #F4F6F5;
-  background-color: #598D66;
-}
+  &:hover {
+    color: #F4F6F5;
+    background-color: #598D66;
+  }
 
-&:focus {
-  outline: none;
-  background-color: #D4E8D9;
-  color: #598D66;
-  border: 1px solid #598D66;
-}
+  &:focus {
+    outline: none;
+    background-color: #D4E8D9;
+    color: #598D66;
+    border: 1px solid #598D66;
+  }
 
-&:active {
-  color: #fff;
-  background-color: #376B44;
-}
+  &:active {
+    color: #fff;
+    background-color: #376B44;
+  }
 
   @include media.for-tablet_510_and_above{
     padding: 20px 60px;
@@ -88,6 +97,7 @@
 }
 
 .intro__image {
+
   @include media.for-mobile {
   display: none;
   }
