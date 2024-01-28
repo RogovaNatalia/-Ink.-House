@@ -23,7 +23,7 @@
   }
 
   @include media.for-desktop {
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: min-content 115px min-content 60px min-content 60px min-content auto min-content;
     grid-template-rows: repeat(2, auto);
     row-gap: 35px;
   }
