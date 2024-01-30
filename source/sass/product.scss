@@ -5,7 +5,7 @@
   background-color: #e1ede6;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 30px;
   margin-bottom: 30px;
 
   @include media.for-tablet_510 {
@@ -51,7 +51,7 @@
 
 .product__title {
   @include title.title();
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
   @include media.for-tablet_690 {
     margin-bottom: 8px;
@@ -86,7 +86,7 @@
 
 .product__btn {
   background-color: #e1ede6;
-  padding: 20px 0;
+  padding: 14px 0;
 
   &:hover {
     color: #F4F6F5;
@@ -104,8 +104,13 @@
     color: #fff;
     background-color: #376B44;
   }
+
+  @include media.for-tablet_690_and_above {
+    padding: 21px 0;
+  }
 }
 
 .product__image {
   width: 100%;
+  display: block;
 }

@@ -82,19 +82,19 @@
           <h2 class="title catalog-top__title">Рeпродукции</h2>
           <ul class="catalog-top__tabs tabs">
             <li class="tabs-item">
-              <button class="tabs-item__btn tabs-item__btn--active">Франция</button>
+              <button class="tabs-item__btn tabs-item__btn--active" onclick="showTab(0)">Франция</button>
             </li>
             <li class="tabs-item">
-              <button class="tabs-item__btn">Германия</button>
+              <button class="tabs-item__btn" onclick="showTab(1)">Германия</button>
             </li>
             <li class="tabs-item">
-              <button class="tabs-item__btn">Англия</button>
+              <button class="tabs-item__btn" onclick="showTab(2)">Англия</button>
             </li>
           </ul>
         </div>
 
         <div>
-          <div class="catalog__list catalog__list--active">
+          <div class="catalog__list catalog__list--active" id="tab0">
             <ul class="catalog-list">
               <li class="catalog-list__item">
                 <article class="product">
@@ -200,7 +200,7 @@
               </li>
             </ul>
           </div>
-          <div class="catalog__list">
+          <div class="catalog__list" id="tab1">
             <ul class="catalog-list">
               <li class="catalog-list__item">
                 <article class="product">
@@ -306,7 +306,7 @@
               </li>
             </ul>
           </div>
-          <div class="catalog__list">
+          <div class="catalog__list" id="tab2">
             <ul class="catalog-list">
               <li class="catalog-list__item">
                 <article class="product">
@@ -447,7 +447,7 @@
           </picture>
           <picture>
             <source srcset="img/about-3.png, img/about-3_2x.png 2x" media="(min-width: 576px)">
-            <img src="img/about-1.png" alt="Член команды" class="team-list__item">
+            <img src="img/about-3.png" alt="Член команды" class="team-list__item">
           </picture>
         </div>
       </div>
@@ -556,5 +556,6 @@
     </section>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
 </body>
 </html>

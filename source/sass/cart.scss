@@ -4,14 +4,21 @@
   @include media.for-mobile {
   position: absolute;
   top: 21px;
-  right: 15px;
+  right: 0;
   }
 
   @include media.for-tablet_510 {
     position: absolute;
     right: 0;
-    top: 14px;
+    top: 16px;
   }
+
+
+  // @include media.for-tablet_690 {
+  //   position: absolute;
+  //   right: 0;
+  //   top: 16px;
+  // }
 
   @include media.for-desktop {
     position: absolute;

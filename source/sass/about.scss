@@ -24,6 +24,7 @@
 .about__title {
   @include title.title();
     margin-top: 30px;
+    line-height: 110%;
 
   @include media.for-tablet_690 {
     margin-top: 40px;

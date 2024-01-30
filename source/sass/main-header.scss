@@ -55,11 +55,21 @@
 }
 
 .main-header__logo {
-  text-align: center;
+  display: block;
+  padding: 16px 0 16px;
+
+  @include media.for-tablet_690 {
+    padding: 0;
+  }
+  @include media.for-desktop {
+    padding: 33px 0 32px;
+  }
 }
 
 .main-header__logo-image {
-  margin: 16px 0;
+  margin: 0 auto;
+  display: block;
+
 
   @include media.for-tablet_690 {
     margin: 0;

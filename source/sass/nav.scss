@@ -6,6 +6,7 @@
 
   @include media.for-tablet_510 {
     display: flex;
+    margin: 18px 0;
   }
 
   @include media.for-tablet_690_and_above {
@@ -39,6 +40,7 @@
   text-decoration: none;
   color: #2c2d35;
   font-size: 18px;
+  display: block;
 
   &:hover {
     color: #598D66;

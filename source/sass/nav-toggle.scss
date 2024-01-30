@@ -50,6 +50,10 @@
   }
 }
 
+.nav-toggle__open svg {
+display: block;
+}
+
 .nav-toggle__menu {
   @include media.for-mobile {
     display: none;
